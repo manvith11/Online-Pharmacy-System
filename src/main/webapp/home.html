@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONLINE MEDICINE SUPPLY SYSTEM</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header, footer {
+            background-color: #004d99;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        section {
+            background-color: #ffffff;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+        }
+        h2 {
+            color: #004d99;
+        }
+        form input, form button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        form button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        form button:hover {
+            opacity: 0.9;
+        }
+        #signupForm {
+            display: none;
+            position: fixed;
+            top: 20%;
+            left: 35%;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Online Medicine Supply System</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#Location">Location</a></li>
+                    <li><a href="#forecast">forecast</a></li>
+                    <li><a href="signup.jsp">Signup/Login</a></li> <!-- Updated link -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+s
+    <section id="home">
+        <div class="container">
+            <h2>Welcome to Online Medicine Supply System</h2>
+            <p>Helps to you get medicines to the door step.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Online Medicine Supply System. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function showSignupForm() {
+            document.getElementById('signupForm').style.display = 'block';
+        }
+
+        function hideSignupForm() {
+            document.getElementById('signupForm').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
